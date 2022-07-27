@@ -1,5 +1,12 @@
+first angular project
+tic tac toe app (game) 
 
-https://user-images.githubusercontent.com/101416092/181294788-ec6e11a1-d10e-4e3e-b941-027365024dad.mp4
+click here to see website:
+
+https://angular-tic-tac-toe-app.netlify.app/
+
+
+
 ![home](https://user-images.githubusercontent.com/101416092/181295209-419b4cac-2c7f-4660-a457-98f14363ecc4.png)
 
 
