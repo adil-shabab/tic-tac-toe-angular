@@ -1,3 +1,9 @@
+
+https://user-images.githubusercontent.com/101416092/181294788-ec6e11a1-d10e-4e3e-b941-027365024dad.mp4
+![home](https://user-images.githubusercontent.com/101416092/181295209-419b4cac-2c7f-4660-a457-98f14363ecc4.png)
+
+
+
 # Game
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.6.
