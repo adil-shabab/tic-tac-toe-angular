@@ -40,3 +40,9 @@ p,span{
 .red{
   background: red;
 }
+.player-two{
+  background-color: red;
+}
+.player-one{
+  background: green;
+}

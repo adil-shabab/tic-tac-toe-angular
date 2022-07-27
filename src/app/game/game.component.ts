@@ -23,9 +23,15 @@ export class GameComponent implements OnInit {
   async clickSubfield( subfield:any ): Promise<void>{
     if(this.game.gameStatus === 1){
       const position = subfield.currentTarget.getAttribute('position')
-      
       console.log(position)
 
+      this.game.setField(position, this.game.currentPlayer)
+      const color = this.game.getPlayerColor()
+      subfield.currentTarget.classList.add(color)
+
+
+
+      this.game.changePlayer()
     }
   }
 }
