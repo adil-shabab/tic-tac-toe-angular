@@ -11,21 +11,21 @@
     <span>Player 2</span>
   </div>
 
-  <div class="game-field w-100">
+  <div *ngIf="this.game.gameStatus === 1" class="game-field w-100">
     <div class="row m-0 w-100">
-      <div class="subfield col-4"></div>
-      <div class="subfield col-4"></div>
-      <div class="subfield col-4"></div>
+      <div (click)="clickSubfield($event)" position=0 class="subfield col-4"></div>
+      <div (click)="clickSubfield($event)" position=1 class="subfield col-4"></div>
+      <div (click)="clickSubfield($event)" position=2 class="subfield col-4"></div>
     </div>
     <div class="row m-0 w-100">
-      <div class="subfield col-4"></div>
-      <div class="subfield col-4"></div>
-      <div class="subfield col-4"></div>
+      <div (click)="clickSubfield($event)" position=3 class="subfield col-4"></div>
+      <div (click)="clickSubfield($event)" position=4 class="subfield col-4"></div>
+      <div (click)="clickSubfield($event)" position=5 class="subfield col-4"></div>
     </div>
     <div class="row m-0 w-100">
-      <div class="subfield col-4"></div>
-      <div class="subfield col-4"></div>
-      <div class="subfield col-4"></div>
+      <div (click)="clickSubfield($event)" position=6 class="subfield col-4"></div>
+      <div (click)="clickSubfield($event)" position=7 class="subfield col-4"></div>
+      <div (click)="clickSubfield($event)" position=8 class="subfield col-4"></div>
     </div>
   </div>
 </div>
