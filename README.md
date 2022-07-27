@@ -6,6 +6,8 @@ click here to see website:
 https://angular-tic-tac-toe-app.netlify.app/
 
 
+https://user-images.githubusercontent.com/101416092/181296572-e4da8035-8ece-4170-a1dc-0c36c5f2fde0.mp4
+
 
 ![home](https://user-images.githubusercontent.com/101416092/181295209-419b4cac-2c7f-4660-a457-98f14363ecc4.png)
 
