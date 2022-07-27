@@ -2,3 +2,41 @@
 
 /* font-family: 'Lobster', cursive;
 font-family: 'Righteous', cursive; */
+
+
+.game-container{
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  border: 1px solid black;
+  padding: 50px 10px !important;
+}
+h2{
+  color: orange;
+  font-family: 'Lobster', cursive
+}
+h4,span{
+  font-family: 'Righteous', cursive;
+}
+.game-field{
+  margin-top: 30px;
+}
+.subfield{
+  cursor: pointer;
+  border: 1px solid black;
+  height: 100px;
+}
+.color{
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+.green{
+  background: green;
+}
+.red{
+  background: red;
+}
