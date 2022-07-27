@@ -1,7 +1,7 @@
 <div class="game-container">
   <h2>Tic-Tac-Toe</h2>
-  <button *ngIf="this.game.gameStatus === 0" class="text-white font-weight-bold mt-3 rounded btn btn-warning">Start Game</button>
-  <h4 class="current-status mt-4">Current Player: 1</h4>
+  <button (click)="startGame()" *ngIf="this.game.gameStatus === 0" class="text-white font-weight-bold mt-3 rounded btn btn-warning">Start Game</button>
+  <p class="current-status mt-4">Current Player: {{this.game.currentPlayer}}</p>
   <div class="row mt-2">
     <div class="green col color"></div>
     <span>Player 1</span>

@@ -11,9 +11,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GameComponent implements OnInit {
 
-  constructor(game: Gamelogic) { }
+  constructor(public game: Gamelogic) { }
 
   ngOnInit(): void {
   }
 
+  startGame(): void{
+    this.game.gameStart()
+  }
 }
