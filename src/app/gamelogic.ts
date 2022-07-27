@@ -78,4 +78,42 @@ export class Gamelogic {
     }
   }
 
+
+
+  arrayEquals(a: Array<any>, b: Array<any>): boolean{
+    return Array.isArray(a) && Array.isArray(b) && a.length === b.length && a.every(( value, index ) => value === b[index])
+  }
+
+  async checkGameWinner(): Promise<boolean> {
+    let isWinner = false;
+
+    const checkArray = (this.currentPlayer === 1) ? this.winSituationOne : this.winSituationTwo;
+
+    let currentArray: Array<number> = []
+
+    this.gameField.forEach((subfield, index) => {
+      if (subfield !== this.currentPlayer){
+        currentArray[index] = 0
+      }else{
+        currentArray[index] = subfield
+      }
+    })
+
+    checkArray.forEach((checkfield, checkindex) => {
+      if(this.arrayEquals(checkfield, currentArray)) {
+        isWinner = true
+      }
+    })
+
+    // console.log(currentArray)
+    console.log(currentArray)
+
+    if (isWinner){
+      this.gameEnd()
+      return true
+    }else {
+      return false
+    }
+  }
+
 }
