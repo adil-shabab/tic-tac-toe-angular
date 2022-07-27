@@ -59,4 +59,23 @@ export class Gamelogic {
     this.currentPlayer= (this.currentPlayer === 2) ? 1 : 2
   }
 
+  gameEnd(): void{
+    this.gameStatus = Status.STOP
+  }
+
+  async checkGameFull(): Promise<boolean> {
+    let isFull = true;
+
+    if (this.gameField.includes(0)){
+      isFull = false;
+    }
+
+    if (isFull){
+      this.gameEnd()
+      return true
+    }else{
+      return false
+    }
+  }
+
 }
