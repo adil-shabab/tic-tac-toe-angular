@@ -29,7 +29,14 @@ export class GameComponent implements OnInit {
       const color = this.game.getPlayerColor()
       subfield.currentTarget.classList.add(color)
 
+      await this.game.checkGameFull().then((end: boolean)=>{
+        if(this.game.gameStatus === 0 && end){
+        const information = <HTMLSpanElement>document.querySelector('.span')
+        information.innerHTML = 'Now Winner, Draw'
+        }
+      })
 
+      
 
       this.game.changePlayer()
     }
