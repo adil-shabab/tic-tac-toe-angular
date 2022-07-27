@@ -5,13 +5,13 @@ font-family: 'Righteous', cursive; */
 
 
 .game-container{
-  width: 320px;
+  width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
-  border: 1px solid black;
-  padding: 50px 10px !important;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+  padding: 50px 20px !important;
 }
 h2{
   color: orange;
@@ -45,4 +45,11 @@ p,span{
 }
 .player-one{
   background: green;
+}
+.winner{
+  background: rgb(20, 194, 20);
+  padding: 20px 10px;
+  color: white;
+  border: 2px solid orange;
+  border-radius: 15px;
 }

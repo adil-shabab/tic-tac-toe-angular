@@ -36,9 +36,23 @@ export class GameComponent implements OnInit {
         }
       })
 
-      
+
+      await this.game.checkGameWinner().then( (end: boolean) => {
+        if(this.game.gameStatus === 0 && end){
+        const information = <HTMLSpanElement>document.querySelector('.span')
+        information.classList.add('winner')
+        information.innerHTML = 'Winner is player number '+ this.game.currentPlayer
+        }
+      })
+
 
       this.game.changePlayer()
+
+      if(this.game.gameStatus === 1){
+        const currentPlayer = 'Current turn: Player: '+this.game.currentPlayer;
+        const information = <HTMLSpanElement>document.querySelector('.span')
+        information.innerHTML = currentPlayer
+      }
     }
   }
 }
