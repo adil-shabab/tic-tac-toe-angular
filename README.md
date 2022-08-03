@@ -1,6 +1,8 @@
 first angular project
 tic tac toe app (game) 
 
+my first PWA
+
 click here to see website:
 
 https://angular-tic-tac-toe-app.netlify.app/
