@@ -1,7 +1,7 @@
 first angular project
 tic tac toe app (game) 
 
-my first PWA
+my first PWA 
 
 click here to see website:
 
@@ -15,6 +15,8 @@ https://user-images.githubusercontent.com/101416092/181296572-e4da8035-8ece-4170
 
 
 
+
+hosted using netlify
 # Game
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.6.
