@@ -8,6 +8,13 @@ click here to see website:
 https://angular-tic-tac-toe-app.netlify.app/
 
 
+<p align="center"> 
+  Visitor count<br>
+  <img src="https://profile-counter.glitch.me/adil-shabab/count.svg" />
+</p>
+
+
+
 https://user-images.githubusercontent.com/101416092/181296572-e4da8035-8ece-4170-a1dc-0c36c5f2fde0.mp4
 
 
